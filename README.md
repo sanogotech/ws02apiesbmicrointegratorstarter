@@ -114,6 +114,23 @@ Recommended system requirements:
 
 ##  Building a crud restful api with wso2-micro-integrator
 
+**Create database.**
+```
+create database city_db character set latin1;
+```
+Run the following script.
+
+```
+use city_db
+CREATE TABLE `city` (
+`id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+`city` varchar(50) DEFAULT NULL,
+PRIMARY KEY (`id`)
+);
+```
+
+Now that we have created the database, let’s create the DataService using Integration Studio.
+
 ## Stop / remove all Docker containers
 
 One liner to stop / remove all of Docker containers:
@@ -121,3 +138,4 @@ One liner to stop / remove all of Docker containers:
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 ```
+
