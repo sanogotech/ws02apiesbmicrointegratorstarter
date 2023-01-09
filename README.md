@@ -49,3 +49,11 @@ Recommended system requirements:
 - https://wso2.com/integration/integration-studio
 
 ##  Building a crud restful api with wso2-micro-integrator
+
+## Stop / remove all Docker containers
+
+One liner to stop / remove all of Docker containers:
+```
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+```
