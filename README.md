@@ -1,6 +1,68 @@
 # ws02apiesbmicrointegratorstarter
 API  ESB  Micro Integrator ESB  API Manager
 
+## Stack WS02
+
+The Technology Stack Organizations that do implement microservices often adopt the MSA style along with most of the complementary technologies listed below. | | | |--|--| 
+
+**|WSO2 Technology|
+
+Ballerina
+Microgateway
+Micro Integrator
+API Manager
+Enterprise Integrator
+Identity Server| |IDE|Eclipse
+IntelliJ
+VSCode| |Code Repository|Github
+Gitlab| |Binary Repository|Maven
+Ballerina Central
+JFrog
+|CI/CD|Jenkins
+Travis
+Codefresh| |Test Frameworks|SOAP UI
+JMeter
+TestNG| |Configuration Management Tools|Puppet
+Chef
+Ansible
+|Container Orchestration|Kubernetes
+OpenShift
+Mesosphere
+DC/OS
+Hashicorp
+Nomad
+Docker Swarm |Service Mesh|Istio
+Linkerd
+Conduit
+nginMesh| |Observability|Monitoring
+
+**Application Metrics**
+
+WSO2 Analytics Server (WSO2 API Analytics, WSO2 Integrator Analytics, etc.)
+Prometheus/Grafana
+Splunk
+AppDynamics
+
+**System Metrics**
+Icinga
+AWS Cloud Watch
+
+**Logging**
+
+Fluentd
+ELK Stack
+Beats - Agents that ship data to Logstash or Elasticsearch. Filebeat will ship the WSO2 logs to Logstash.
+Logstash - Processes and structures the log files received from Filebeat and sends to Elasticsearch.
+Elasticsearch - Stores and indexes the logs received by Logstash.
+Kibana - Visualizes the data stored in Elasticsearch
+
+**Distributed Tracing**
+Jaeger
+Zipkin
+AppDash
+AppDynamics
+WSO2 Analytics Server (WSO2 API Analytics, WSO2 Integrator Analytics, etc.)
+
 ##  Docs
 - https://github.com/wso2/docker-apim
 - https://wso2.com/integration/install/docker-compose/community/get-started/
