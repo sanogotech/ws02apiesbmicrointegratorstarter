@@ -9,6 +9,12 @@ API  ESB  Micro Integrator ESB  API Manager
 ## Entreprise Integrator
 
 - https://wso2.com/integration/install/docker-compose/community/get-started/
+```
+Recommended system requirements:
+3 GHz Dual-core Xeon/Opteron (or latest)
+8 GB RAM
+10 GB free disk space
+```
 
 ## Integration Studio
 - https://wso2.com/integration/integration-studio
