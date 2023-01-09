@@ -11,6 +11,10 @@ API  ESB  Micro Integrator ESB  API Manager
 
 * https://github.com/wso2/docker-apim
 
+```
+docker-compose up --build
+```
+
 Access the WSO2 API Manager web UIs using the below URLs via a web browser.
 ```
 https://localhost:9443/publisher
@@ -45,3 +49,11 @@ Recommended system requirements:
 - https://wso2.com/integration/integration-studio
 
 ##  Building a crud restful api with wso2-micro-integrator
+
+## Stop / remove all Docker containers
+
+One liner to stop / remove all of Docker containers:
+```
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+```
