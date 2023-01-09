@@ -11,6 +11,10 @@ API  ESB  Micro Integrator ESB  API Manager
 
 * https://github.com/wso2/docker-apim
 
+```
+docker-compose up --build
+```
+
 Access the WSO2 API Manager web UIs using the below URLs via a web browser.
 ```
 https://localhost:9443/publisher
