@@ -107,6 +107,8 @@ Recommended system requirements:
 10 GB free disk space
 ```
 
+![EI Components](https://github.com/sanogotech/ws02apiesbmicrointegratorstarter/blob/main/docs/EIComponents.png)
+
 ## Integration Studio
 - https://wso2.com/integration/integration-studio
 
