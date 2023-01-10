@@ -1,0 +1,34 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Parameters component",
+    "version": "1.0.0"
+  },
+  "paths": {},
+  "components": {
+    "parameters": {
+      "airportCode": {
+        "name": "airportCode",
+        "in": "path",
+        "description": "Airport Icao Code",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "schema": {
+          "type": "integer"
+        }
+      },
+      "aircraftNumber": {
+        "name": "aircraftNumber",
+        "in": "path",
+        "description": "Aircraft Serial",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "schema": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

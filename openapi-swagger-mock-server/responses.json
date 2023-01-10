@@ -1,0 +1,72 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Responses Components",
+    "version": "1.0.0"
+  },
+  "paths": {},
+  "components": {
+    "responses": {
+      "aircraft_200": {
+        "description": "successful operation",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "schemas.json#/components/schemas/Aircraft"
+            },
+            "examples": {
+              "example_1": {
+                "$ref": "responses_examples.json#/components/examples/aircraft_200"
+              }
+            }
+          }
+        }
+      },
+      "aircrafts_200": {
+        "description": "successful operation",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "schemas.json#/components/schemas/Aircrafts"
+            },
+            "examples": {
+              "example_1": {
+                "$ref": "responses_examples.json#/components/examples/aircrafts_200"
+              }
+            }
+          }
+        }
+      },
+      "airports_200": {
+        "description": "successful operation",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "schemas.json#/components/schemas/Airports"
+            },
+            "examples": {
+              "example_1": {
+                "$ref": "responses_examples.json#/components/examples/airports_200"
+              }
+            }
+          }
+        }
+      },
+      "airport_200": {
+        "description": "successful operation",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "schemas.json#/components/schemas/Airport"
+            },
+            "examples": {
+              "example_1": {
+                "$ref": "responses_examples.json#/components/examples/airport_200"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

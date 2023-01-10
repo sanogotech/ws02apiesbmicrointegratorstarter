@@ -1,0 +1,63 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Schemas Component",
+    "version": "1.0.0"
+  },
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Aircraft": {
+        "required": [
+          "serialNumber"
+        ],
+        "type": "object",
+        "properties": {
+          "aircraftNumber": {
+            "type": "string",
+            "example": "N44X"
+          },
+          "maxPax": {
+            "type": "integer"
+          }
+        },
+        "xml": {
+          "name": "Aircraft"
+        }
+      },
+      "Aircrafts": {
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/Aircraft"
+        }
+      },
+      "Airport": {
+        "type": "object",
+        "properties": {
+          "icaoCode": {
+            "type": "string",
+            "example": "someString"
+          },
+          "name": {
+            "type": "string",
+            "example": "someString"
+          },
+          "country": {
+            "type": "string",
+            "example": "someString"
+          },
+          "city": {
+            "type": "string",
+            "example": "someString"
+          }
+        }
+      },
+      "Airports": {
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/Airport"
+        }
+      }
+    }
+  }
+}

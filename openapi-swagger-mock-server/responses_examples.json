@@ -1,0 +1,48 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Responses component",
+    "version": "1.0.0"
+  },
+  "components": {
+    "examples": {
+      "airport_200": {
+        "summary": "Example Succes 1",
+        "description": "An example for Airport Get Endpoint.",
+        "value": {
+          "icaoCode": "AC4",
+          "name": "TarracoAirport",
+          "country": "Spain",
+          "city": "Tarragona"
+        }
+      },
+      "airports_200": {
+        "summary": "Example Succes 1",
+        "description": "An example for Airport List Get Endpoint.",
+        "value": [
+          {
+            "$ref": "#/components/examples/airport_200/value"
+          }
+        ]
+      },
+      "aircraft_200": {
+        "summary": "Example Succes 1",
+        "description": "An example for Aircraft Detail Get Endpoint. ",
+        "value": {
+          "aircraftNumber": "Aircraft1",
+          "type": "Some_Aircraft",
+          "maxPax": 100
+        }
+      },
+      "aircrafts_200": {
+        "summary": "Example Succes 1",
+        "description": "An example for Aircraft List Get Endpoint.",
+        "value": [
+          {
+            "$ref": "#/components/examples/aircraft_200/value"
+          }
+        ]
+      }
+    }
+  }
+}

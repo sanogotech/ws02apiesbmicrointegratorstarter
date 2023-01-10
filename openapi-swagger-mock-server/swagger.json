@@ -1,0 +1,113 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Nuvolar OpenAPI Mock server Swagger UI tutorial",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8080",
+      "description": "Swagger Mock Server URL"
+    }
+  ],
+  "tags": [
+    {
+      "name": "aircrafts",
+      "description": "Aircraft Information"
+    },
+    {
+      "name": "airports",
+      "description": "Airports Information"
+    }
+  ],
+  "paths": {
+    "/airports/{airportCode}": {
+      "get": {
+        "tags": [
+          "airports"
+        ],
+        "summary": "Detail Airport information",
+        "description": "Get the airport information by ICAO code",
+        "operationId": "getAirportsInformation",
+        "parameters": [
+          {
+            "$ref": "parameters.json#/components/parameters/airportCode"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "responses.json#/components/responses/airport_200"
+          },
+          "400": {
+            "description": "Invalid Icao Code supplied"
+          },
+          "404": {
+            "description": "Airport not found"
+          }
+        }
+      }
+    },
+    "/airports": {
+      "get": {
+        "tags": [
+          "airports"
+        ],
+        "summary": "List Airports information",
+        "description": "Get a list of all the available airports",
+        "operationId": "getAllAirportsInformation",
+        "responses": {
+          "200": {
+            "$ref": "responses.json#/components/responses/airports_200"
+          },
+          "400": {
+            "description": "Invalid ID supplied"
+          },
+          "404": {
+            "description": "Aircraft not found"
+          }
+        }
+      }
+    },
+    "/aircrafts/{aircraftNumber}": {
+      "get": {
+        "tags": [
+          "aircrafts"
+        ],
+        "summary": "Detail Aircraft information",
+        "description": "Returns the information for a single Aircraft",
+        "operationId": "getAircraft",
+        "parameters": [
+          {
+            "$ref": "parameters.json#/components/parameters/aircraftNumber"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "responses.json#/components/responses/aircraft_200"
+          },
+          "400": {
+            "description": "Invalid Aircraft Number supplied"
+          },
+          "404": {
+            "description": "Aircraft not found"
+          }
+        }
+      }
+    },
+    "/aircrafts": {
+      "get": {
+        "tags": [
+          "aircraft"
+        ],
+        "summary": "List Aircraft Information",
+        "description": "Get all the Aircraft",
+        "operationId": "getAircrafts",
+        "responses": {
+          "200": {
+            "$ref": "responses.json#/components/responses/aircrafts_200"
+          }
+        }
+      }
+    }
+  }
+}
