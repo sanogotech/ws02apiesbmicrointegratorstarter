@@ -38,7 +38,7 @@
 
   4. Execute following Docker Compose command to start the deployment.
      ```
-     docker-compose up
+     docker-compose up  -d
      ```
      
   5. Access management console via a web browser.
