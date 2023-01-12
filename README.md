@@ -1,5 +1,7 @@
 # ws02apiesbmicrointegratorstarter
-API  ESB  Micro Integrator ESB  API Manager
+API  ESB  Micro Integrator ESB  API Manager.
+
+## Architecture
 
 ## Json Rest api validator
 - https://jsonlint.com/
