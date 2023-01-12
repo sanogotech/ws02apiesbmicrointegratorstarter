@@ -1,6 +1,20 @@
 # ws02apiesbmicrointegratorstarter
 API  ESB  Micro Integrator ESB  API Manager
 
+## Json Rest api validator
+- https://jsonlint.com/
+```json
+     {
+                    	"students": {
+                    		"student": [{
+                    			"name": "$name",
+                    			"school": "$school",
+                    			"grade": "$grade"
+                    		}]
+                    	}
+                    }
+```
+ 
 ## Stack WS02
 
 The Technology Stack Organizations that do implement microservices often adopt the MSA style along with most of the complementary technologies listed below. | | | |--|--| 
