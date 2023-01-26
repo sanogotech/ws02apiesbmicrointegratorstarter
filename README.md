@@ -161,5 +161,6 @@ pwd
 /home/wso2carbon
 cd wso2ei-6.5.0/lib
 wget "http://jdbc.postgresql.org/download/postgresql-9.2-1002.jdbc4.jar"
+docker restart wso2ei-integrator
 ```
 
