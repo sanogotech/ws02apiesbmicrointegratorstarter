@@ -154,4 +154,12 @@ One liner to stop / remove all of Docker containers:
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 ```
+## Add  Driver JDBC
+```
+docker exec -ti wso2ei-integrator  bash
+pwd
+/home/wso2carbon
+cd wso2ei-6.5.0/lib
+wget "http://jdbc.postgresql.org/download/postgresql-9.2-1002.jdbc4.jar"
+```
 
